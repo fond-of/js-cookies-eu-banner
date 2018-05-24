@@ -1,0 +1,58 @@
+.banner {
+    &--cookies-eu {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: $banner-background-color;
+        z-index: 10000;
+    }
+
+    .banner__content {
+        color: $banner-color;
+
+        a,
+        a:visited,
+        a:active,
+        a:link {
+            color: $banner-link-color;
+            text-decoration: $banner-link-decoration;
+        }
+
+        a:hover {
+            color: $banner-link-hover-color;
+            text-decoration: $banner-link-hover-decoration;
+        }
+
+        .banner__button {
+            border: $banner-button-border;
+            background: $banner-button-background-color;
+            color: $banner-button-color;
+
+            margin-right: 1em;
+        }
+
+        .banner__button:hover {
+            border: $banner-button-hover-border;
+            background: $banner-button-hover-background-color;
+            color: $banner-button-hover-color;
+        }
+
+        .banner__button.banner__button--info {
+            border: $banner-secondary-button-border;
+            background: $banner-secondary-button-background-color;
+            color: $banner-secondary-button-color;
+        }
+
+        .banner__secondary-button.banner__secondary-button--infon:hover {
+            border: $banner-secondary-button-hover-border;
+            background: $banner-secondary-button-hover-background-color;
+            color: $banner-secondary-button-hover-color;
+        }
+
+        .banner__button.banner__button--info,
+        .banner__button.banner__button--info:hover {
+            display: inline-block;
+            text-decoration: none;
+        }
+    }
+}

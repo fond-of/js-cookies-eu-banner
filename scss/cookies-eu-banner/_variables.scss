@@ -1,0 +1,23 @@
+$banner-background-color:                           #1a1a1a !default;
+$banner-color:                                      #fff !default;
+$banner-link-color:                                 #89c700 !default;
+$banner-link-decoration:                            none !default;
+$banner-link-hover-color:                           lighten($banner-link-color, 15%) !default;
+$banner-link-hover-decoration:                      underline !default;
+
+$banner-button-border:                              1px solid $banner-link-color !default;
+$banner-button-background-color:                    transparent !default;
+$banner-button-color:                               $banner-link-color !default;
+
+$banner-button-hover-border:                        1px solid $banner-link-hover-color !default;
+$banner-button-hover-background-color:              transparent !default;
+$banner-button-hover-color:                         $banner-link-hover-color !default;
+
+$banner-secondary-button-border:                    1px solid $banner-link-color !default;
+$banner-secondary-button-background-color:          $banner-link-color !default;
+$banner-secondary-button-color:                     $banner-color !default;
+
+$banner-secondary-button-hover-border:              1px solid $banner-link-hover-color !default;
+$banner-secondary-button-hover-background-color:    $banner-link-hover-color !default;
+$banner-secondary-button-hover-color:               $banner-color !default;
+
