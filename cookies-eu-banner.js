@@ -1,17 +1,17 @@
 'use strict';
 
-let tinyCookie = require('tiny-cookie');
-let $ = require('jquery');
+var tinyCookie = require('tiny-cookie');
+var $ = require('jquery');
 
 module.exports = function CookiesEUBanner(options) {
-  let self = this;
+  var self = this;
   self.options = options;
 
   self.init = function () {
     writeBannerElementToDom();
   };
 
-  let writeBannerElementToDom = function () {
+  var writeBannerElementToDom = function () {
     $('body').prepend(createBannerElement());
 
     $('.banner.banner--cookies-eu .banner__button.banner__button--ok').click(function () {
@@ -20,8 +20,8 @@ module.exports = function CookiesEUBanner(options) {
     });
   };
 
-  let createBannerElement = function () {
-    let banner = document.createElement('div');
+  var createBannerElement = function () {
+    var banner = document.createElement('div');
 
     banner.setAttribute('class', 'banner banner--cookies-eu');
 
@@ -34,8 +34,8 @@ module.exports = function CookiesEUBanner(options) {
     return banner;
   };
 
-  let createBannerContentElement = function () {
-    let bannerContent = document.createElement('div');
+  var createBannerContentElement = function () {
+    var bannerContent = document.createElement('div');
 
     bannerContent.setAttribute('class', 'banner__content');
     bannerContent.innerHTML = self.options.message;
@@ -46,8 +46,8 @@ module.exports = function CookiesEUBanner(options) {
     return bannerContent;
   };
 
-  let createOkBannerButtonElement = function () {
-    let button = document.createElement('button');
+  var createOkBannerButtonElement = function () {
+    var button = document.createElement('button');
 
     button.setAttribute('class', 'button banner__button banner__button--ok');
     button.innerHTML = self.options.button.ok.text;
@@ -55,8 +55,8 @@ module.exports = function CookiesEUBanner(options) {
     return button;
   };
 
-  let createInfoBannerButtonElement = function () {
-    let button = document.createElement('a');
+  var createInfoBannerButtonElement = function () {
+    var button = document.createElement('a');
 
     button.setAttribute('class', 'button banner__button banner__button--info');
     button.innerHTML = self.options.button.info.text;
@@ -65,8 +65,8 @@ module.exports = function CookiesEUBanner(options) {
     return button;
   };
 
-  let getExpires = function () {
-    let now = new Date;
+  var getExpires = function () {
+    var now = new Date;
     now.setMonth(now.getMonth() + 1);
 
     return now.toGMTString();
